@@ -1,0 +1,36 @@
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q --cov=app --cov-report term"
+#Disable coverage to debug tests
+# addopts = "-ra -q --no-cov"
+
+testpaths = [
+    "tests"
+]
+markers = [
+    "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+    "integration: marks tests as integration tests",
+    "unit: marks tests as unit tests"
+]
+
+log_cli = true
+log_cli_level = "INFO"
+log_cli_format = "%(asctime)s %(levelname)s %(message)s"
+
+
+[tool.isort]
+multi_line_output = 3
+lines_after_imports = 2
+line_length = 120
+include_trailing_comma = true  # to be compatible with yapf
+
+
+[tool.yapf]
+BASED_ON_STYLE = "pep8"
+BLANK_LINES_AROUND_TOP_LEVEL_DEFINITION = 2
+BLANK_LINES_BETWEEN_TOP_LEVEL_IMPORTS_AND_VARIABLES = 2
+COLUMN_LIMIT = 120
+SPLIT_BEFORE_ARITHMETIC_OPERATOR = true
+SPLIT_BEFORE_BITWISE_OPERATOR = true
+SPLIT_BEFORE_LOGICAL_OPERATOR = true
+DEDENT_CLOSING_BRACKETS = true
