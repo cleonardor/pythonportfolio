@@ -1,9 +1,5 @@
 # Gestor de Archivos Personalizable CLI
 
-# Introducción
-
-Este proyecto tiene como objetivo desarrollar un gestor de archivos personalizable desde la línea de comandos, utilizando Python como lenguaje principal. El gestor permitirá realizar una amplia variedad de operaciones sobre archivos y directorios, desde las más básicas como crear y eliminar, hasta funciones más avanzadas como sincronización con la nube y gestión de versiones.
-
 # Objetivo General
 
 Desarrollar una herramienta de línea de comandos versátil y eficiente para administrar archivos y directorios, ofreciendo al usuario un alto grado de personalización y control.
